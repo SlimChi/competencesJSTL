@@ -8,9 +8,10 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.annotation.WebServlet;
+import java.io.IOException;
 
 
-@WebServlet(name = "ControlleurServlet", urlPatterns = "/action.xx")
+@WebServlet(name = "ControlleurServlet", urlPatterns = "/action")
 public class ControlleurServlet extends HttpServlet {
 
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

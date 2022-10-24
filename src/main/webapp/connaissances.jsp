@@ -10,7 +10,7 @@
 </h1>
 <h2>Veuillez valider les notions Java que vous connaissez afin de poursuivre ce tutoriel :</h2>
 <br/>
-<form action="action.xx" method="post">
+<form action="action" method="post">
     <table>
         <thead>
         <tr>
@@ -20,7 +20,7 @@
         <tbody>
         <tr>
             <td>Votre nom</td>
-            <td><input type="text" name="nom" value=""/></td>
+            <td><input type="text" name="nom" value="" class="nom"/></td>
         </tr>
         <c:forEach items="${competencesBean.competences}" var="competence">
             <tr>
@@ -28,13 +28,14 @@
                 <td><input type="checkbox" name="notionJava" class="checkBox" value="${competence}"></td>
             </tr>
         </c:forEach>
-        <tr>
-            <td><input type="submit" value="Valider" class="button"></td>
-        </tr>
+
 
         </tbody>
-    </table>
 
+    </table>
+    <tr>
+        <td><input type="submit" value="Valider" id="button"></td>
+    </tr>
 </form>
 </body>
 </html>

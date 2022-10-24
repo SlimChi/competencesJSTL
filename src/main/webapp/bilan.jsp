@@ -8,12 +8,13 @@
     <head>
         <title><fmt:message key="skills"/></title>
     </head>
-    <body>
+    <body bgcolor="#add8e6">
     <h1><fmt:message key="thanks"/></h1>
     <hr>
+    <h3>
     <fmt:message key="hello">
         <fmt:param value="${competencesBean.nom}"/>
-    </fmt:message>
+    </fmt:message></h3>
     <p></p>
 
     <h3><fmt:message key="mastered"/> :</h3>
